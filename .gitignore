@@ -1,0 +1,10 @@
+node_modules
+test-results/
+playwright-report/
+.playwright-cli/
+.claude/
+Tailwind-CSS-Landing-Page-Practice
+*.png
+!img/*.png
+!img/**/*.png
+!tests/fixtures/*.png

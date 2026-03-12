@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Manage Landing Page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="pricing.html" data-testid="nav-pricing" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="product.html" data-testid="nav-product" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#" data-testid="nav-about" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#" data-testid="nav-careers" class="hover:text-darkGrayishBlue">Careers</a>
+                <a href="#" data-testid="nav-community" class="hover:text-darkGrayishBlue">Community</a>
+            </div>
+            <!-- Button -->
+            <a href=""
+                class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get
+                Started</a>
+
+            <!-- Hamburger Icon -->
+             <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+             </button>
+        </div>
+
+        <!-- Mobile Menu -->
+         <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
+         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Flex container -->
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+            <!-- Left item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w md text-4xl font-bold text-center md:text-5xl md:textleft">
+                    Bring everyone together to build better products.
+                </h1>
+                <p class="max-w-sm text-center text text-darkGrayishBlue md:text-left">
+                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team
+                    goals in view.
+                </p>
+                <div class="flex justify-center md:justify-start">
+                    <a href=""
+                        class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
+                        Started</a>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="section" id="features">
+            <!-- Flex container -->
+            <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+                <!-- What's Different -->
+                <div class="flex flex-col space-y-12 md:w-1/2">
+                    <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                        What's Different About Manage?
+                    </h2>
+                    <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                        Manage provides all the functionality your team needs, without the complexity. Our software is
+                        tailor-made for modern digital product teams.
+                    </p>
+                </div>
+
+                <!-- Numbered List -->
+                <div class="flex flex-col space-y-8 md:w-1/2">
+                    <!-- List Item 1 -->
+                    <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                        <!-- Heading -->
+                        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                            <div class="flex items-center space-x-2">
+                                <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                    01
+                                </div>
+                                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                    Track company-wide progress
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="hidden mb-4 text-lg font-bold md:block">
+                                Track company-wide progress
+                            </h3>
+                            <p class="text-darkGrayishBlue md:text-left">
+                                See how your day-to-day tasks fit into the wider vision. Go from tracking progress at
+                                the milestone level all the way done to the smallest of details. Never lose sight of the
+                                bigger picture again.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- List Item 2 -->
+                    <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                        <!-- Heading -->
+                        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                            <div class="flex items-center space-x-2">
+                                <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                    02
+                                </div>
+                                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                    Advanced built-in reports
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="hidden mb-4 text-lg font-bold md:block">
+                                Advanced built-in reports
+                            </h3>
+                            <p class="text-darkGrayishBlue md:text-left">
+                                Set internal delivery estimates and track progress toward company goals. Our
+                                customisable dashboard helps you build out the reports you need to keep key stakeholders
+                                informed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- List Item 3 -->
+                    <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                        <!-- Heading -->
+                        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                            <div class="flex items-center space-x-2">
+                                <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+                                    03
+                                </div>
+                                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                                    Everything you need in one place
+                                </h3>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="hidden mb-4 text-lg font-bold md:block">
+                                Everything you need in one place
+                            </h3>
+                            <p class="text-darkGrayishBlue md:text-left">
+                                Stop jumping from one service to another to communicate, store files, track tasks and
+                                share documents. Manage offers an all-in-one team productivity solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" data-testid="products-section" class="bg-veryLightGray">
+        <div class="container mx-auto px-6 py-16 max-w-3xl">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-darkBlue mb-3">Our Products</h2>
+                <p class="text-darkGrayishBlue">Select the products you're interested in and explore them on the Product page.</p>
+            </div>
+
+            <!-- Checkbox List -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8" id="products-list" data-testid="products-list">
+
+                <label data-testid="product-item-ai-agents" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-ai-agents" data-value="AI Agents" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">AI Agents</p>
+                        <p class="text-xs text-darkGrayishBlue">Autonomous agents for complex workflows</p>
+                    </div>
+                </label>
+
+                <label data-testid="product-item-n8n-workflows" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-n8n-workflows" data-value="n8n Workflows" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">n8n Workflows</p>
+                        <p class="text-xs text-darkGrayishBlue">Visual automation for any integration</p>
+                    </div>
+                </label>
+
+                <label data-testid="product-item-rag-systems" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-rag-systems" data-value="RAG Systems" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">RAG Systems</p>
+                        <p class="text-xs text-darkGrayishBlue">Retrieval-augmented generation pipelines</p>
+                    </div>
+                </label>
+
+                <label data-testid="product-item-ai-strategy" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-ai-strategy" data-value="AI Strategy" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">AI Strategy</p>
+                        <p class="text-xs text-darkGrayishBlue">Roadmap and consulting for AI adoption</p>
+                    </div>
+                </label>
+
+                <label data-testid="product-item-process-automation" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-process-automation" data-value="Process Automation" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">Process Automation</p>
+                        <p class="text-xs text-darkGrayishBlue">End-to-end business process automation</p>
+                    </div>
+                </label>
+
+                <label data-testid="product-item-custom-integrations" class="product-checkbox-label flex items-center gap-4 p-4 bg-white rounded-xl border-2 border-gray-200 cursor-pointer hover:border-brightRed transition-colors">
+                    <input type="checkbox" data-testid="product-checkbox-custom-integrations" data-value="Custom Integrations" class="product-checkbox w-5 h-5 accent-brightRed flex-shrink-0" />
+                    <div>
+                        <p class="font-semibold text-darkBlue text-sm">Custom Integrations</p>
+                        <p class="text-xs text-darkGrayishBlue">Tailored API and system integrations</p>
+                    </div>
+                </label>
+
+            </div>
+
+            <!-- View on Product Page -->
+            <div class="text-center">
+                <a href="product.html" data-testid="view-products-btn"
+                    class="inline-block p-3 px-8 pt-2 text-white bg-brightRed rounded-full font-semibold hover:bg-brightRedLight transition-colors">
+                    View Selected on Product Page →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <!-- Container to heading and testm blocks -->
+         <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold text-center">
+                What's Different About Manage?
+            </h2>
+            <!-- Testimonials Container -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                <!-- Testimonial 1 -->
+                 <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="img/avatar-anisha.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Anisha Li</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."
+                    </p>
+                 </div>
+
+                 <!-- Testimonial 2 -->
+                 <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Ali Bravo</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
+                    </p>
+                 </div>
+
+                 <!-- Testimonial 3 -->
+                 <div class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3">
+                    <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="">
+                    <h5 class="text-lg font-bold">Richard Watts</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Manage allows us to provide structure and keep us organized and focused. I can't stop recommending them to everyone I talk to!"
+                    </p>
+                 </div>
+            </div>
+            <!-- Button -->
+            <div class="my-16">
+                <a href="" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Rating Badge (shown on load if localStorage has rating) -->
+    <div id="previous-rating-badge" data-testid="previous-rating-badge" class="hidden text-center py-2">
+        <span class="inline-block bg-yellow-100 border border-yellow-300 text-yellow-800 text-sm font-medium px-4 py-1 rounded-full">
+            <span id="previous-rating-text" data-testid="previous-rating-text"></span>
+        </span>
+    </div>
+
+    <!-- Rate Us Banner (hidden until modal submitted) -->
+    <div id="rating-banner" data-testid="rating-banner" class="hidden bg-green-50 border-b border-green-200 py-3 text-center text-green-700 font-semibold text-sm">
+        <span id="rating-banner-text" data-testid="rating-banner-text"></span>
+    </div>
+
+    <!-- Rate Us Button -->
+    <div class="text-center py-8">
+        <button id="open-rating-modal" data-testid="open-rating-modal"
+            class="p-3 px-6 pt-2 text-brightRed border-2 border-brightRed rounded-full font-semibold hover:bg-brightRed hover:text-white transition-colors">
+            Rate Our Product
+        </button>
+    </div>
+
+    <!-- Rating Modal Backdrop -->
+    <div id="rating-modal-backdrop" data-testid="rating-modal-backdrop"
+        class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <!-- Modal -->
+        <div id="rating-modal" data-testid="rating-modal"
+            class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl text-center">
+            <h2 class="text-2xl font-bold mb-2">How are we doing?</h2>
+            <p class="text-darkGrayishBlue text-sm mb-6">Select a rating and let us know what you think.</p>
+
+            <!-- Stars -->
+            <div class="flex justify-center gap-3 mb-6" id="star-group" data-testid="star-group">
+                <button data-testid="star-1" data-value="1" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors">★</button>
+                <button data-testid="star-2" data-value="2" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors">★</button>
+                <button data-testid="star-3" data-value="3" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors">★</button>
+                <button data-testid="star-4" data-value="4" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors">★</button>
+                <button data-testid="star-5" data-value="5" class="star-btn text-4xl text-gray-300 hover:text-yellow-400 transition-colors">★</button>
+            </div>
+
+            <!-- Selected label -->
+            <p id="rating-selected-label" data-testid="rating-selected-label" class="text-sm text-darkGrayishBlue mb-6 h-5"></p>
+
+            <!-- Actions -->
+            <div class="flex gap-3 justify-center">
+                <button id="rating-cancel" data-testid="rating-cancel"
+                    class="px-6 py-2 rounded-full border-2 border-gray-300 text-gray-500 hover:border-gray-400 transition-colors">
+                    Cancel
+                </button>
+                <button id="rating-submit" data-testid="rating-submit" disabled
+                    class="px-6 py-2 rounded-full bg-brightRed text-white font-semibold hover:bg-brightRedLight transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+        <!-- Flex container -->
+         <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:space-y-0">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Simplify how your team works today.
+            </h2>
+            <!-- Button -->
+            <div class="my-16">
+                <a href="" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900">Get Started</a>
+            </div>
+         </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="bg-white">
+        <div class="container mx-auto px-6 py-12 max-w-2xl">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold text-darkBlue mb-2">Upload Your Brief</h2>
+                <p class="text-darkGrayishBlue text-sm">Share an image or PDF that describes your project.</p>
+            </div>
+
+            <!-- Drop Zone (full) — shown when no file selected -->
+            <label id="upload-dropzone-full" for="file-input" data-testid="upload-dropzone"
+                class="flex items-center justify-center gap-4 w-full h-20 border-2 border-dashed border-brightRed rounded-xl cursor-pointer hover:bg-brightRedSupLight transition-colors px-6">
+                <svg class="w-6 h-6 text-brightRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                </svg>
+                <div>
+                    <p class="text-sm text-darkGrayishBlue"><span class="font-semibold text-brightRed">Click to upload</span> or drag and drop</p>
+                    <p class="text-xs text-darkGrayishBlue">PNG, JPG, GIF, WebP or PDF</p>
+                </div>
+            </label>
+
+            <!-- Drop Zone (compact) — shown when a file is selected -->
+            <label id="upload-dropzone-compact" for="file-input" data-testid="upload-dropzone-compact"
+                style="display:none"
+                class="flex items-center justify-between w-full px-4 py-2 border border-dashed border-brightRed rounded-lg cursor-pointer hover:bg-brightRedSupLight transition-colors">
+                <div class="flex items-center gap-2 text-xs text-brightRed font-semibold">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    Change file
+                </div>
+                <span class="text-xs text-darkGrayishBlue">PNG, JPG, GIF, WebP or PDF</span>
+            </label>
+
+            <input id="file-input" data-testid="file-input" type="file" class="hidden"
+                accept="image/png,image/jpeg,image/gif,image/webp,application/pdf" />
+
+            <!-- Preview Area (hidden by default) -->
+            <div id="upload-preview" data-testid="upload-preview" style="display:none" class="mt-6">
+
+                <!-- Pending badge -->
+                <div id="upload-pending-badge" data-testid="upload-pending-badge"
+                    class="flex items-center gap-2 mb-4 text-xs font-semibold text-yellow-700 bg-yellow-50 border border-yellow-200 rounded-full px-3 py-1 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-yellow-400 inline-block"></span>
+                    Preview — not submitted yet
+                </div>
+
+                <!-- Image Preview -->
+                <div id="preview-image-wrapper" data-testid="preview-image-wrapper" style="display:none" class="text-center">
+                    <img id="preview-image" data-testid="preview-image"
+                        class="max-h-48 mx-auto rounded-xl shadow-md object-contain" src="" alt="Preview" />
+                </div>
+
+                <!-- File Info Card (PDF / other) -->
+                <div id="preview-file-card" data-testid="preview-file-card"
+                    style="display:none" class="flex-col gap-3 bg-veryLightGray rounded-xl border border-gray-200 overflow-hidden">
+                    <!-- File meta row -->
+                    <div class="flex items-center gap-3 px-4 pt-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-brightRed rounded-lg flex items-center justify-center text-white font-bold text-xs">
+                            <span id="preview-file-ext" data-testid="preview-file-ext"></span>
+                        </div>
+                        <div>
+                            <p id="preview-file-name" data-testid="preview-file-name" class="font-semibold text-darkBlue text-sm leading-none"></p>
+                            <p id="preview-file-size" data-testid="preview-file-size" class="text-xs text-darkGrayishBlue mt-0.5"></p>
+                        </div>
+                    </div>
+                    <!-- PDF Canvas Preview -->
+                    <div id="pdf-canvas-wrapper" data-testid="pdf-canvas-wrapper" style="display:none" class="px-4 pb-4">
+                        <canvas id="pdf-canvas" data-testid="pdf-canvas" class="w-full rounded-lg shadow-sm border border-gray-100"></canvas>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div id="upload-actions" data-testid="upload-actions" class="flex items-center gap-3 mt-5">
+                    <button id="upload-submit" data-testid="upload-submit"
+                        class="px-6 py-2 bg-brightRed text-white text-sm font-semibold rounded-full hover:bg-brightRedLight transition-colors">
+                        Submit
+                    </button>
+                    <button id="upload-remove" data-testid="upload-remove"
+                        class="px-4 py-2 text-sm text-gray-500 border border-gray-300 rounded-full hover:border-red-400 hover:text-red-500 transition-colors">
+                        Remove
+                    </button>
+                </div>
+
+                <!-- Submit Success (inside preview, shown after submit) -->
+                <div id="upload-success" data-testid="upload-success"
+                    style="display:none" class="mt-4 flex items-center gap-2 text-xs font-semibold text-green-700 bg-green-50 border border-green-200 rounded-full px-3 py-1 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
+                    Brief shared successfully!
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section id="roi-calculator" data-testid="roi-calculator-section" class="bg-white">
+        <div class="container mx-auto px-6 py-16 max-w-3xl">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-darkBlue mb-3">ROI Calculator</h2>
+                <p class="text-darkGrayishBlue">See how much your team could save by automating with Manage.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Team Size -->
+                <div>
+                    <label class="block text-sm font-semibold text-darkBlue mb-2">Team Size</label>
+                    <input id="roi-team-size" data-testid="roi-team-size" type="number" min="1" value=""
+                        placeholder="e.g. 10"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                </div>
+
+                <!-- Hours Saved / Week (per person) -->
+                <div>
+                    <label class="block text-sm font-semibold text-darkBlue mb-2">Hours Saved / Week <span class="font-normal text-darkGrayishBlue">(per person)</span></label>
+                    <input id="roi-hours-saved" data-testid="roi-hours-saved" type="number" min="0" value=""
+                        placeholder="e.g. 5"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                </div>
+
+                <!-- Hourly Rate -->
+                <div>
+                    <label class="block text-sm font-semibold text-darkBlue mb-2">Hourly Rate <span class="font-normal text-darkGrayishBlue">($)</span></label>
+                    <input id="roi-hourly-rate" data-testid="roi-hourly-rate" type="number" min="0" value=""
+                        placeholder="e.g. 75"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                </div>
+
+                <!-- Monthly Investment -->
+                <div>
+                    <label class="block text-sm font-semibold text-darkBlue mb-2">Monthly Investment <span class="font-normal text-darkGrayishBlue">($)</span></label>
+                    <input id="roi-monthly-investment" data-testid="roi-monthly-investment" type="number" min="0" value=""
+                        placeholder="e.g. 2000"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                </div>
+            </div>
+
+            <!-- Results (hidden until all inputs filled) -->
+            <div id="roi-results" data-testid="roi-results" style="display:none"
+                class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div class="text-center p-6 bg-veryLightGray rounded-2xl">
+                    <p class="text-xs font-semibold text-darkGrayishBlue uppercase tracking-wide mb-2">Monthly Savings</p>
+                    <p id="roi-monthly-savings" data-testid="roi-monthly-savings" class="text-3xl font-bold text-darkBlue">—</p>
+                </div>
+
+                <div class="text-center p-6 bg-veryLightGray rounded-2xl">
+                    <p class="text-xs font-semibold text-darkGrayishBlue uppercase tracking-wide mb-2">Annual Savings</p>
+                    <p id="roi-annual-savings" data-testid="roi-annual-savings" class="text-3xl font-bold text-darkBlue">—</p>
+                </div>
+
+                <div class="text-center p-6 rounded-2xl bg-brightRed">
+                    <p class="text-xs font-semibold text-white uppercase tracking-wide mb-2 opacity-80">ROI</p>
+                    <p id="roi-percentage" data-testid="roi-percentage" class="text-3xl font-bold text-white">—</p>
+                </div>
+
+            </div>
+
+            <!-- Placeholder shown until inputs filled -->
+            <div id="roi-placeholder" data-testid="roi-placeholder"
+                class="text-center py-8 text-darkGrayishBlue text-sm">
+                Fill in all four fields to see your results.
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="bg-veryLightGray">
+        <div class="container mx-auto px-6 py-24 max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-darkBlue mb-4">Book Your Consultation</h2>
+                <p class="text-darkGrayishBlue">Tell us about your project and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <!-- Success Message (hidden by default) -->
+            <div id="booking-success" class="hidden mb-8 p-6 bg-green-50 border border-green-300 rounded-xl text-center">
+                <div class="text-green-600 text-2xl font-bold mb-2">Booking Received!</div>
+                <p class="text-green-700">Thank you! We'll be in touch within 24 hours.</p>
+            </div>
+
+            <form id="booking-form" novalidate>
+                <!-- Name -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-2" for="booking-name">Full Name <span class="text-brightRed">*</span></label>
+                    <input id="booking-name" name="name" type="text" placeholder="Jane Smith"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="name"></p>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-2" for="booking-email">Email Address <span class="text-brightRed">*</span></label>
+                    <input id="booking-email" name="email" type="text" placeholder="jane@company.com"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="email"></p>
+                </div>
+
+                <!-- Website -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-2" for="booking-website">Website URL <span class="text-brightRed">*</span></label>
+                    <input id="booking-website" name="website" type="text" placeholder="https://yourcompany.com"
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors" />
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="website"></p>
+                </div>
+
+                <!-- Services -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-3">Services Needed <span class="text-brightRed">*</span></label>
+                    <div class="flex flex-wrap gap-3" id="services-group">
+                        <button type="button" data-group="services" data-value="AI Agents"
+                            class="toggle-btn px-5 py-2 rounded-full border-2 border-brightRed text-brightRed font-medium hover:bg-brightRed hover:text-white transition-colors">AI Agents</button>
+                        <button type="button" data-group="services" data-value="n8n workflows"
+                            class="toggle-btn px-5 py-2 rounded-full border-2 border-brightRed text-brightRed font-medium hover:bg-brightRed hover:text-white transition-colors">n8n workflows</button>
+                        <button type="button" data-group="services" data-value="RAG Systems"
+                            class="toggle-btn px-5 py-2 rounded-full border-2 border-brightRed text-brightRed font-medium hover:bg-brightRed hover:text-white transition-colors">RAG Systems</button>
+                        <button type="button" data-group="services" data-value="Ai Strategy"
+                            class="toggle-btn px-5 py-2 rounded-full border-2 border-brightRed text-brightRed font-medium hover:bg-brightRed hover:text-white transition-colors">Ai Strategy</button>
+                    </div>
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="services"></p>
+                </div>
+
+                <!-- Timeline -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-3">Timeline <span class="text-brightRed">*</span></label>
+                    <div class="flex flex-wrap gap-3" id="timeline-group">
+                        <button type="button" data-group="timeline" data-value="ASAP"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">ASAP</button>
+                        <button type="button" data-group="timeline" data-value="1-3 Months"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">1-3 Months</button>
+                        <button type="button" data-group="timeline" data-value="3-6 Months"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">3-6 Months</button>
+                        <button type="button" data-group="timeline" data-value="Exploring"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">Exploring</button>
+                    </div>
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="timeline"></p>
+                </div>
+
+                <!-- Challenge -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-darkBlue mb-2" for="booking-challenge">Your Challenge <span class="text-brightRed">*</span></label>
+                    <textarea id="booking-challenge" name="challenge" rows="4" placeholder="Describe the problem you're trying to solve (min 20 characters)..."
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-brightRed transition-colors resize-none"></textarea>
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="challenge"></p>
+                </div>
+
+                <!-- Budget -->
+                <div class="mb-8">
+                    <label class="block text-sm font-semibold text-darkBlue mb-3">Budget Range <span class="text-brightRed">*</span></label>
+                    <div class="flex flex-wrap gap-3" id="budget-group">
+                        <button type="button" data-group="budget" data-value="Under $5k"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">Under $5k</button>
+                        <button type="button" data-group="budget" data-value="$5k-$15k"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">$5k-$15k</button>
+                        <button type="button" data-group="budget" data-value="$15k-$30k"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">$15k-$30k</button>
+                        <button type="button" data-group="budget" data-value="$30k+"
+                            class="toggle-btn single px-5 py-2 rounded-full border-2 border-darkGrayishBlue text-darkGrayishBlue font-medium hover:border-darkBlue hover:text-darkBlue transition-colors">$30k+</button>
+                    </div>
+                    <p class="booking-error hidden mt-1 text-sm text-brightRed" data-field="budget"></p>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button type="submit" id="booking-submit"
+                        class="px-10 py-3 text-white bg-brightRed rounded-full font-semibold text-lg hover:bg-brightRedLight focus:outline-none transition-colors">
+                        Book Your Consultation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+     <footer class="bg-veryDarkBlue">
+        <!-- Flex container -->
+         <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">Copyright &copy; 2026, All Rights Reserved</div>
+                <!-- Logo -->
+                 <div>
+                    <img src="img/logo-white.svg" class="h-8" alt="">
+                 </div>
+                 <!-- Social Links Container -->
+                  <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                     <a href="#"><img src="img/icon-facebook.svg" class="h-8" alt=""></a>
+                     <!-- Link 2 -->
+                     <a href="#"><img src="img/icon-youtube.svg" class="h-8" alt=""></a>
+                     <!-- Link 3 -->
+                     <a href="#"><img src="img/icon-twitter.svg" class="h-8" alt=""></a>
+                     <!-- Link 4 -->
+                     <a href="#"><img src="img/icon-pinterest.svg" class="h-8" alt=""></a>
+                     <!-- Link 5 -->
+                     <a href="#"><img src="img/icon-instagram.svg" class="h-8" alt=""></a>
+                  </div>
+            </div>
+            <!-- List Container -->
+             <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-brightRed">Home</a>
+                    <a href="" class="hover:text-brightRed">Pricing</a>
+                    <a href="" class="hover:text-brightRed">Products</a>
+                    <a href="" class="hover:text-brightRed">About</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="" class="hover:text-brightRed">Careers</a>
+                    <a href="" class="hover:text-brightRed">Community</a>
+                    <a href="" class="hover:text-brightRed">Privacy Policy</a>
+                </div>
+             </div>
+
+             <!-- Input Container -->
+              <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" 
+                        class="flex-1 px-4 rounded-full focus:outline-none" 
+                        placeholder="Updated in your inbox">
+                        <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">Go</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2026, All Rights Reserved
+                </div>
+              </div>
+         </div>
+     </footer>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+     <script src="js/script.js"></script>
+</body>
+
+</html>

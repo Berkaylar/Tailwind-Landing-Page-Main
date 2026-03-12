@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Pricing – Manage</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <a href="index.html" data-testid="nav-logo">
+                    <img src="img/logo.svg" alt="Manage">
+                </a>
+            </div>
+            <div class="hidden space-x-6 md:flex">
+                <a href="pricing.html" data-testid="nav-pricing" class="font-bold text-darkBlue">Pricing</a>
+                <a href="product.html" data-testid="nav-product" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="index.html#features" data-testid="nav-about" class="hover:text-darkGrayishBlue">About Us</a>
+            </div>
+            <a href="index.html" data-testid="nav-back-home"
+                class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Pricing Hero -->
+    <section data-testid="pricing-hero" class="container mx-auto px-6 py-16 text-center">
+        <h1 class="text-5xl font-bold mb-4">Simple, Transparent Pricing</h1>
+        <p class="text-darkGrayishBlue max-w-xl mx-auto">
+            Choose the plan that works for your team. Upgrade or downgrade at any time.
+        </p>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section data-testid="pricing-cards" class="container mx-auto px-6 pb-24">
+        <div class="flex flex-col md:flex-row gap-8 justify-center">
+
+            <!-- Starter -->
+            <div data-testid="plan-starter" class="flex flex-col p-8 rounded-2xl bg-veryLightGray md:w-1/3">
+                <h2 class="text-xl font-bold mb-2">Starter</h2>
+                <p class="text-darkGrayishBlue text-sm mb-6">Perfect for small teams just getting started.</p>
+                <div class="text-4xl font-bold mb-6">$0 <span class="text-lg font-normal text-darkGrayishBlue">/ mo</span></div>
+                <ul class="space-y-3 text-darkGrayishBlue text-sm mb-8">
+                    <li>✓ Up to 5 users</li>
+                    <li>✓ 3 projects</li>
+                    <li>✓ Basic reporting</li>
+                    <li class="opacity-40">✗ Priority support</li>
+                </ul>
+                <a href="index.html#booking" data-testid="plan-starter-cta"
+                    class="mt-auto text-center py-3 rounded-full border-2 border-brightRed text-brightRed font-semibold hover:bg-brightRed hover:text-white transition-colors">
+                    Get Started Free
+                </a>
+            </div>
+
+            <!-- Pro -->
+            <div data-testid="plan-pro" class="flex flex-col p-8 rounded-2xl bg-brightRed text-white md:w-1/3">
+                <div class="text-xs font-bold uppercase tracking-widest mb-2 opacity-75">Most Popular</div>
+                <h2 class="text-xl font-bold mb-2">Pro</h2>
+                <p class="opacity-80 text-sm mb-6">For growing teams that need more power.</p>
+                <div class="text-4xl font-bold mb-6">$29 <span class="text-lg font-normal opacity-75">/ mo</span></div>
+                <ul class="space-y-3 text-sm mb-8 opacity-90">
+                    <li>✓ Up to 25 users</li>
+                    <li>✓ Unlimited projects</li>
+                    <li>✓ Advanced reporting</li>
+                    <li>✓ Priority support</li>
+                </ul>
+                <a href="index.html#booking" data-testid="plan-pro-cta"
+                    class="mt-auto text-center py-3 rounded-full bg-white text-brightRed font-semibold hover:bg-gray-100 transition-colors">
+                    Start Free Trial
+                </a>
+            </div>
+
+            <!-- Enterprise -->
+            <div data-testid="plan-enterprise" class="flex flex-col p-8 rounded-2xl bg-veryLightGray md:w-1/3">
+                <h2 class="text-xl font-bold mb-2">Enterprise</h2>
+                <p class="text-darkGrayishBlue text-sm mb-6">Custom solutions for large organisations.</p>
+                <div class="text-4xl font-bold mb-6">Custom</div>
+                <ul class="space-y-3 text-darkGrayishBlue text-sm mb-8">
+                    <li>✓ Unlimited users</li>
+                    <li>✓ Unlimited projects</li>
+                    <li>✓ Custom reporting</li>
+                    <li>✓ Dedicated support</li>
+                </ul>
+                <a href="index.html#booking" data-testid="plan-enterprise-cta"
+                    class="mt-auto text-center py-3 rounded-full border-2 border-brightRed text-brightRed font-semibold hover:bg-brightRed hover:text-white transition-colors">
+                    Contact Sales
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
